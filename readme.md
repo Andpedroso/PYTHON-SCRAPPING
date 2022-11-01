@@ -1,5 +1,5 @@
 ## Scrapping da loja virtual x
-#### Foram consultados os principais valores dos produtos oferecidos na loja e organizados em tabelas de ordem decrescente.
+#### Foram consultados os principais valores dos produtos oferecidos na loja.
 ---
 ## Comandos
 ---
@@ -49,19 +49,6 @@ for x in prices:
 prices_list
 ```
 ---
-> Gerar tabela
-```bash
-prices=soup.find_all('span',{'x-bestPrice'})
-prices_list=[]
-for x in prices:
-  prices_list.append(x.text)
-prices_list
-```
----
-> Organizar informações
-```bash
-frame_prices.sort_values(by=['Prices'],ascending=False)
-```
 ---
 ## Ferramentas
 #### Para este projeto foi utilizado o GoogleColaboratory.
