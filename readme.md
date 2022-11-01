@@ -12,8 +12,6 @@ from bs4 import BeautifulSoup
 !pip install gtts
 from gtts import gTTS
 import os
-import pandas as pd
-import matplotlib.pyplot as plt
 ```
 ---
 > Carregar página e retornar status
@@ -35,7 +33,7 @@ soup=BeautifulSoup(src,'lxml')
 soup
 ```
 ---
-> Localizar a informção que precisa através das tags e dos nomes de classes
+> Localizar a informação que precisa através das tags e dos nomes de classes
 ```bash
 soup.find_all('span',{'x-bestPrice'})
 ```
